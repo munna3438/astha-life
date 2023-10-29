@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /***********************
+   * primary color
+   ***********************/
+  .p-color {
+    color: #018e36;
+  }
+  .bg-p-color {
+    background-color: #018e36;
+  }
+
+  .s-color {
+    color: #ff655a;
+  }
+  .bg-s-color {
+    background: #ff655a;
+  }
+}
