@@ -13,7 +13,7 @@
   margin: auto;
 }
 .sec {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 /***********************
@@ -398,12 +398,23 @@
 
 .services {
   background: #ecf9f1;
-  /* Style for the middle item */
+  padding-top:90px;
+  // style for carousel 
   .swiper {
     width: 100%;
     height: 100%;
+    
+  }
+  .swiper-button-prev{
+    color:#4ee488;  
+    
+  }
+  .swiper-button-next{
+    color:#4ee488;  
+    
   }
 
+  // style for carousel item
   .swiper-slide {
     background-image: url("../images/bg-corner.png");
     background-size: contain;
@@ -425,9 +436,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         svg {
           path {
+            transition: all ease-in-out .4s;
             fill: #018e36;
           }
         }
@@ -435,6 +446,7 @@
       .sl-content-text {
         h3,
         a {
+          transition: all ease-in-out .4s;
           color: #018e36;
           i {
             transition: all ease-in-out 0.4s;
@@ -447,38 +459,36 @@
         }
       }
     }
-    &.swiper-slide-active {
-      position: relative;
-      top: -16px;
-      padding: 0.7rem;
-      background-color: #ff655a;
+
+    // item hover effect
+    &:hover{
+      background-color:#ff655a;
+      transform: scale(1.04);
+      color:#ffff;
       .swiper-slide-content {
         .sl-content-logo {
-          margin-bottom: 1.3rem;
-          svg {
-            width: 85px;
-            height: 85px;
-            object-fit: cover;
-            path {
-              fill: #fff;
+          svg{
+            path{
+           fill:#ffff;
             }
           }
         }
-        .sl-content-text {
-          h3,
-          a,
-          p {
-            color: white;
-          }
+      }
+      .sl-content-text {
+        h3,
+        a {
+          color: #ffff;
+          
         }
       }
+      
     }
   }
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  // .swiper-slide img {
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
 }

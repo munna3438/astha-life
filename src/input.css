@@ -9,6 +9,11 @@
   .p-color {
     color: #018e36;
   }
+  .sp-color{
+    /* color: #4ee488; */
+    color:red;
+
+  }
   .bg-p-color {
     background-color: #018e36;
   }

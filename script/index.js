@@ -99,41 +99,10 @@ $(".preview").click(function () {
 
 // service carousel
 
-// var swiper = new Swiper(".mySwiper", {
-//   // slidesPerView: 3,
-//   spaceBetween: 30,
-//   grabCursor: true,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   slidesPerView: "auto",
-//   effect: coverflow,
-//   coverflowEffect: {
-//     rotate: 0,
-//     stretch: 0,
-//     depth: 100,
-//     modifier: 0,
-//     slideShadows: true,
-//   },
-// });
 var swiper = new Swiper(".mySwiper", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
   slidesPerView: 3,
-  spaceBetween: 30,
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 0,
-    slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  spaceBetween: 40,
+  loop:true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
